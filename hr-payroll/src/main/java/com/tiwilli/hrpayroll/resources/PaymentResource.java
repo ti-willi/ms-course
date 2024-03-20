@@ -1,7 +1,6 @@
 package com.tiwilli.hrpayroll.resources;
 
 import com.tiwilli.hrpayroll.dto.PaymentDTO;
-import com.tiwilli.hrpayroll.entities.Payment;
 import com.tiwilli.hrpayroll.services.PaymentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
