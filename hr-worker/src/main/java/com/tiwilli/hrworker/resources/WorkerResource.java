@@ -35,6 +35,12 @@ public class WorkerResource {
     @GetMapping(value = "/{id}")
     public ResponseEntity<WorkerDTO> findById(@PathVariable Long id) {
 
+        /*try {
+            Thread.sleep(3000L);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }*/
+
         logger.info("PORT = " + environment.getProperty("local.server.port"));
 
         WorkerDTO obj = service.findById(id);
