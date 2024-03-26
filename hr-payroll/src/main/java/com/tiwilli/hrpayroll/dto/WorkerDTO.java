@@ -1,7 +1,5 @@
 package com.tiwilli.hrpayroll.dto;
 
-import com.tiwilli.hrpayroll.entities.Worker;
-
 public class WorkerDTO {
 
     private Long id;
@@ -12,13 +10,6 @@ public class WorkerDTO {
         this.id = id;
         this.name = name;
         this.dailyIncome = dailyIncome;
-    }
-
-    public WorkerDTO(Worker entity) {
-        id = entity.getId();
-        name = entity.getName();
-        dailyIncome = entity.getDailyIncome();
-
     }
 
     public Long getId() {
