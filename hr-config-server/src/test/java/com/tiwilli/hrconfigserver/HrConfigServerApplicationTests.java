@@ -1,10 +1,10 @@
-package com.tiwilli.hrpayroll;
+package com.tiwilli.hrconfigserver;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class HrWorkerApplicationTests {
+class HrConfigServerApplicationTests {
 
 	@Test
 	void contextLoads() {

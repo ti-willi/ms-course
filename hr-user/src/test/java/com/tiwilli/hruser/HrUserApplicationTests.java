@@ -1,10 +1,10 @@
-package com.tiwilli.hrapigatewayzuul;
+package com.tiwilli.hruser;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class HrEurekaServerApplicationTests {
+class HrUserApplicationTests {
 
 	@Test
 	void contextLoads() {
