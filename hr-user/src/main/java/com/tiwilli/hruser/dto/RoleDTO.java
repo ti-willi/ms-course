@@ -5,23 +5,23 @@ import com.tiwilli.hruser.entities.Role;
 public class RoleDTO {
 
     private Long id;
-    private String name;
+    private String authority;
 
-    public RoleDTO(Long id, String name) {
+    public RoleDTO(Long id, String authority) {
         this.id = id;
-        this.name = name;
+        this.authority = authority;
     }
 
     public RoleDTO(Role entity) {
         id = entity.getId();
-        name = entity.getRoleName();
+        authority = entity.getAuthority();
     }
 
     public Long getId() {
         return id;
     }
 
-    public String getName() {
-        return name;
+    public String getAuthority() {
+        return authority;
     }
 }
