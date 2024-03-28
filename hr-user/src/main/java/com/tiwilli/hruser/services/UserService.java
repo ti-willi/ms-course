@@ -20,8 +20,7 @@ public class UserService {
     }
 
     @Transactional(readOnly = true)
-    public UserDTO findByEmail(String email) {
-        User obj = repository.findByEmail(email);
-        return new UserDTO(obj);
+    public User findByEmail(String email) {
+        return repository.findByEmail(email);
     }
 }

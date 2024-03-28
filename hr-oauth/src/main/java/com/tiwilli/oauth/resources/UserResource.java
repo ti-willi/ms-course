@@ -1,6 +1,6 @@
 package com.tiwilli.oauth.resources;
 
-import com.tiwilli.oauth.dto.UserDTO;
+import com.tiwilli.oauth.entities.User;
 import com.tiwilli.oauth.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -18,10 +18,10 @@ public class UserResource {
     private UserService service;
 
     @GetMapping(value = "/search")
-    public ResponseEntity<UserDTO> findByEmail(@RequestParam String email) {
+    public ResponseEntity<User> findByEmail(@RequestParam String email) {
         try {
-            UserDTO dto = service.findByEmail(email);
-            return ResponseEntity.ok(dto);
+            User user = service.findByEmail(email);
+            return ResponseEntity.ok(user);
         }
         catch (IllegalArgumentException e) {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).build();

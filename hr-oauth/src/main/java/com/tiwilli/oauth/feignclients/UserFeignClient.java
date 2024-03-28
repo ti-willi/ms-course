@@ -1,6 +1,6 @@
 package com.tiwilli.oauth.feignclients;
 
-import com.tiwilli.oauth.dto.UserDTO;
+import com.tiwilli.oauth.entities.User;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
@@ -12,5 +12,5 @@ import org.springframework.web.bind.annotation.RequestParam;
 public interface UserFeignClient {
 
     @GetMapping(value = "/search")
-    ResponseEntity<UserDTO> findByEmail(@RequestParam String email);
+    ResponseEntity<User> findByEmail(@RequestParam String email);
 }
